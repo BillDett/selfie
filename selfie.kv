@@ -1,0 +1,16 @@
+<Widgets>:
+    FloatLayout:
+        Button:
+            text: 'Go!'
+            size_hint: .25, .25
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            font_size: 72
+            background_color: {0,0,1,1}
+            on_press: root.takePicture()
+            canvas.before:
+                PushMatrix
+                Rotate:
+                    angle: 270
+                    origin: self.center
+            canvas.after:
+                PopMatrix

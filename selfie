@@ -1,0 +1,5 @@
+# Start Selfie App
+echo "Starting selfie booth..."
+cd /home/pi/retreat
+/usr/bin/python /home/pi/retreat/selfie.py &
+
